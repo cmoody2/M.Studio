@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Christopher Moody">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="./css/main.css">
+		<title>M. | Studio</title>
+		<link rel="shortcut icon" type="image/jpg" href="images/letter_m.png">
+	</head>
+	<body>
+
+	
+		<!--NAVBAR-->
+		<div class="navbar">
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about">About Us</a></li>
+				<li><a href="#brands">Contact</a></li>
+				<li><a href="#gallery">Project Gallery</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</div>
+		<!--/NAVBAR-->
+	
+		
+	<div class="container-background">
+		
+		<!-- HEADER -->
+		<div class="container-fluid" id="home">
+			<header>
+				<h1>M. | Studio</h1>
+			</header>
+		</div>
+
+		<!--BACKGROUND-->
+		<div class="container-background-image">
+				<img src="./images/empty_studio.png" alt="background image">
+		</div>
+		<!--/BACKGROUND-->
+	</div>
+
+		<!--ABOUT SECTION -->
+		<div id="about">
+			<h1>ABOUT US</h1>
+
+			<!-- ABOUT SECTION PHOTO 1 -->
+			<div class="about-photo-container">
+				<div class="about_photo">
+					<img class="office" src="./images/office1.png" alt="IMAGE NOT FOUND!">
+				</div>
+			</div>
+			
+
+			<p>
+				M. | Studio (pronounced m-dot-studio) was created in 2020<br>
+				by Christopher A. Moody, an up and coming software engineer, <br>
+				who set out to provide a creatively stimulating place<br>
+				where designers of bespoke keyboards could craft creations and showcase their works. A place<br>
+				where they could cultivate their ideas into a diverseful, successful brand.<br>
+				<br>
+				Chris set out to make a space that felt all inclusive, where each designer felt encouraged<br>
+				to explore their limits and challenge the status quo of keyboard design. It needed<br>
+				to be set up in a way that it provided each designer their own space to work on projects<br>
+				but also encourage group efforts with several commune and meeting spaces.<br>
+				<br>
+				With these goals in mind the main layout out of M. | Studio has several sectioned off<br>
+				workspace, with open fourth walls, all equiped with everything a designer could need<br> 
+				as well as ample room for any essential additions.<br>
+				Each section combines into a common area where creators can present projects and perhaps<br>
+				plan collaborations on future projects.<br>
+				<br>
+				All these sections combine into the spacious main exhit hall where each designer<br>
+				is provided a well accommodating area to display their latest works. Each designer is<br>
+				encouraged to individualize their displays with provided materials as well as<br>
+				any outside material they would like to utilize.<br>
+				We hold showcases every first Saturday of the month, with available time slots<br>
+				for individual showcases(subject to availability, please contact administor for more details).<br>
+				<br>
+				If M. | Studios speaks to you and you'd like to become part of the family<br>
+				please fill out or contact form below. We look forward to your future with M. | Studio!<br>
+			</p>
+		</div>
+
+
+			<!-- HOUSE BRANDS -->
+			<div id="brands">
+			
+					<div>
+						<h1>HOUSE BRANDS</h1>
+						<h4>(click to view website)</h4>
+						<!-- Brand container 1 -->
+						<div>
+							<a class="logo1" href="https://keycult.com/" target="_blank">
+								<img src="./images/keycult_logo.png" alt="Keycult store logo">
+							</a>
+						</div>
+						<!-- END BRAND CONTAINER 1 -->
+						
+						<br>
+						
+						<!-- Brand container 2 -->
+						<div>
+							<a class="logo2" href="https://shop.norbauer.com/" target="_blank">
+								<img src="./images/norbauer_logo - Copy.png" alt="Norbauer store logo">
+							</a>
+						</div>
+						<!-- END BRAND CONTAINER 2 -->
+						
+						<br>
+						
+						<!-- Brand container 3 -->
+						<div>
+							<a class="logo3" href="https://rama.works/" target="_blank">
+								<img src="./images/rama_logo.png" alt="RAMA store logo">
+							</a>
+						</div>
+						<!-- END BRAND CONTAINER 3 -->
+						
+					</div>
+			</div>
+	
+
+			<!-- GALLERY SECTION -->
+					<h1 id="gallery">PROJECT GALLERY</h1>
+
+					<div class="row">
+						<div class="column">
+							<img src="./images/keycult_thumb_1.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow">
+						</div>
+						<div class="column">
+							<img src="./images/keycult_thumb_2.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow">
+						</div>
+						<div class="column">
+							<img src="./images/keycult_thumb_3.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow">
+						</div>
+						<div class="column">
+							<img src="./images/keycult_thumb_4.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow">
+						</div>
+						<div class="column">
+							<img src="./images/norbauer_thumb_1.png" style="width:100%"onclick="openModal();currentSlide(5)" class="hover-shadow">
+						</div>
+						<div class="column">
+							<img src="./images/norbauer_thumb_2.png" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow">
+						</div>
+						<div class="column">
+							<img src="./images/rama_thumb_1.png" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow">
+						</div>
+						<div class="column">
+							<img src="./images/rama_thumb_2.png" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
+						</div>	
+					</div>
+
+					<div id="myModal" class="modal">
+						<span class="close cursor" onclick="closeModal()">&times;</span>
+						<div class="modal-content">
+
+							<div class="mySlides">
+								<div class="numbertext">1 / 8</div>
+								<img src="./images/keycult_thumb_1_wide.png" style="width: 100%">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">2 / 8</div>
+								<img src="./images/keycult_thumb_2_wide.png" style="width: 100%">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">3 / 8</div>
+								<img src="./images/keycult_thumb_3_wide.png" style="width: 100%">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">4 / 8</div>
+								<img src="./images/keycult_thumb_4_wide.png" style="width: 100%">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">5 / 8</div>
+								<img src="./images/norbauer_thumb_1_wide.png" style="width: 100%">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">6 / 8</div>
+								<img src="./images/norbauer_thumb_2_wide.png" style="width: 100%">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">7 / 8</div>
+								<img src="./images/rama_thumb_1_wide.png" style="width: 100%">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">8 / 8</div>
+								<img src="./images/rama_thumb_2_wide.png" style="width: 100%">
+							</div>
+
+
+
+							<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+							<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+							<div class="caption-container">
+								<p id="caption"></p>
+							</div>
+
+							<div class="column">
+								<img class="demo" src="./images/keycult_thumb_1.png" style="width:100%" onclick="currentSlide(1)" alt="Keycult No. 1/60">
+							</div>
+
+							<div class="column">
+								<img class="demo" src="./images/keycult_thumb_2.png" style="width:100%" onclick="currentSlide(2)" alt="Keycult No. 1/60 bottom weight">
+							</div>
+
+							<div class="column">
+								<img class="demo" src="./images/keycult_thumb_3.png" style="width:100%" onclick="currentSlide(3)" alt="Keycult No. 2">
+							</div>
+
+							<div class="column">
+								<img class="demo" src="./images/keycult_thumb_4.png" style="width:100%" onclick="currentSlide(4)" alt="Keycult No. 2">
+							</div>
+
+							<div class="column">
+								<img class="demo" src="./images/norbauer_thumb_1.png" style="width:100%" onclick="currentSlide(5)" alt="Norbauer Heavy 6 in aperture">
+							</div>
+
+							<div class="column">
+								<img class="demo" src="./images/norbauer_thumb_2.png" style="width:100%" onclick="currentSlide(6)" alt="Norbauer Norbaforce TKL">
+							</div>
+
+							<div class="column">
+								<img class="demo " src="./images/rama_thumb_1.png" style="width:100%" onclick="currentSlide(7)" alt="Rama Koyu">
+							</div>
+
+							<div class="column">
+								<img class="demo" src="./images/rama_thumb_2.png" style="width:100%" onclick="currentSlide(8)" alt="Rama U80-A">
+							</div>
+
+						
+						</div>
+					</div>
+			<!-- END GALLERY SECTION -->
+
+			<!-- VIDEO SECTION -->
+			<section>
+				<div>
+					<h2>RAMA U80-A&reg; PRODUCT VIDEO</h2>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/2RzX-O7nZ9w" 
+						frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
+				</div>
+			</section>
+	
+
+		<!-- CONTACT FORM -->
+		<section>
+			<div id="contact">
+				<div>
+				<h1>CONTACT US</h1>
+					<div>
+						<p>
+							If you have any questions about available designer spaces, exhibit hall rentals<br>
+							or any other general questions please fill out form below.<br>
+						</p>
+						<p>
+							Please provide us with your basic contact information
+						</p>
+						<button type="button" class="open-button" onclick="openForm()">Open Form</button>
+						<div class="form-popup" id="contactForm">
+							<form action="" method="" class="form-container">
+								<input class="rsvp" type="text" value="" placeholder="First Name">
+								<input class="rsvp" type="text" value="" placeholder="Last Name">
+								<input class="rsvp" type="text" value="" placeholder="Email">
+								<input class="rsvp" type="text" value="" placeholder="Message">
+								<div class="form-spacer">
+									<label class="terms">Terms and Conditions</label>
+								</div>
+								<div>
+									<input type="submit" value="Submit">
+								</div>
+								<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+	
+		<!-- FOOTER -->
+		<div>
+			<h3><span>www.mdotstudio.com</span> &nbsp;| ALL RIGHTS RESERVED &nbsp; &copy;2020</h3>
+		</div>
+		
+		<script src="./js/main.js"></script>
+	</body>
+</html>

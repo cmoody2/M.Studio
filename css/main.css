@@ -1,0 +1,365 @@
+@font-face {
+    font-family: "Monts-bold";
+    src: url('./fonts/Montserrat-Bold.ttf');
+}
+
+@font-face {
+    font-family: "Monts-light";
+    src: url('./fonts/Montserrat-Light.ttf');
+}
+
+@font-face {
+    font-family: "DM-serif-reg";
+    src: url('./fonts/DMSerifText-Regular.ttf');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "monts-light", sans-serif;
+    font-size: 1.5em;
+}
+
+.navbar {
+    position: fixed;
+    display: flex;
+    width: 99.2%;
+    top: 8px;
+    height: 40px;
+    border: 2px solid black;
+    z-index: 1;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(10, 0, 0, 0.897);
+    font-family: 'monts-bold';
+    font-size: 1vw;
+}
+
+ul {
+    display: inline-flex;
+    flex-flow: row nowrap;
+    justify-content: space-around safe;
+    width: 100%;
+    height: 40px;
+    margin: 0px;
+    padding-left: 0px;
+}
+
+li {
+    flex: 1;
+    list-style-type: none;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.row > .column {
+    padding: 0px 2px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 25%;
+}
+
+/*===============================
+    Modal background
+=================================*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+
+/*================================
+    Modal content
+==================================*/
+.modal-content {
+    position: relative;
+    background-color: black;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/*================================
+    Close Button
+==================================*/
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mySlides {
+    display: none;
+}
+
+/*================================
+    Next & Previous Buttons
+==================================*/
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/*===================================
+    Position of Next Button
+=====================================*/
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/*=========================================
+    On hover black transparent background
+===========================================*/
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*===============================
+    Number Text (ex. 1 / 9)
+=================================*/
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+.caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+}
+
+img.demo {
+    opacity: 0.6;
+}
+
+.active, .demo:hover {
+    opacity: 1;
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+header h1 {
+    font-family: 'DM-serif-reg', sans-serif;
+    font-size: 4em;
+}
+
+
+.logo1 {
+    padding-left: 69%;
+    padding-top: 65px;
+    padding-bottom: 50px;
+    background-color: red;
+}
+
+.logo2 {
+    padding-right: 410.5px;
+    padding-left: 5%;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    background-color: #f3f3f3;
+}
+
+.logo3 {
+    padding-left: 69%;
+    padding-top: 50px;
+    padding-bottom:50px;
+    background-color: black;
+}
+
+h1 {
+    font-family: 'Monts-bold';
+    font-size: 3vw;
+    text-align: center;
+    border-bottom: 5px;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+    position: relative;
+    animation: mymove 7s infinite;
+}
+
+@keyframes mymove {
+    0% {top: 0px;}
+    50% {top: 20px;}
+    100% {top: 0px;}
+}
+
+h4 {
+    text-align: center;
+    font-size: 1em;
+}
+
+input {
+    width: 400px;
+    padding: 13px 20px;
+    margin: 12px 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.form-spacer {
+    padding: 25px 20px;
+}
+
+
+#about {
+    background-color: black;
+    color: white;
+    margin-top: 50%;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.container-background {
+    position: fixed;
+    display: flex;
+
+    z-index: -10;
+}
+
+.container-background-image {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 5px;
+}
+
+.container-background-image > img {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.about-photo-container {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    overflow: hidden;
+    width: 400px;
+}
+
+.office {
+    width: 500px;
+    height: 400px;
+    animation: 15s photoMove infinite;
+}
+
+@keyframes photoMove {
+    0% {transform: scale(1,1);}
+    50% {transform: scale(1.06,1.06);}
+    100% {transform: scale(1,1);}
+}
+
+.container-fluid {
+   position: relative;
+   margin-bottom: 0px;
+   top: 50px;
+}
+
+p {
+    text-align: center;
+}
+/*===============================
+    From popup
+=================================*/
+.open-button {
+    margin-left: 562px;
+    background-color: red;
+    color: white;
+    padding: 16px 20px;
+    border: 1px solid black;
+    border-radius: 3px;
+    cursor: pointer;
+    opacity: 0.8;
+    width: 40%;
+}
+
+.form-popup {
+    margin: auto;
+    display: none;
+    width: 500px;
+    bottom: 0;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+.form-container {
+    margin: auto;
+    max-width: 600px;
+    padding: 25px;
+    background-color: white;
+}
+
+.form-container .btn {
+    background-color: red;
+    color: white;
+    padding: 16px 20px;
+    border: 1px solid black;
+    border-radius: 3px;
+    cursor: pointer;
+    opacity: 0.8;
+    width: 400px;
+}
+
