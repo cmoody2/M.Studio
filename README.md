@@ -5,4 +5,5 @@ Fictional keyboard design studio website created to demonstrate creation of sing
 Technologies used in creation:
 - HTML
 - CSS
+- JavaScript
 
